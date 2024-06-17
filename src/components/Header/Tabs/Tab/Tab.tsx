@@ -1,14 +1,14 @@
-import { TabProps } from "@mui/material";
 import React from "react";
 
 import s from "./Tab.module.css";
+import { TabProps } from "./TabProps.interface";
 
-const Tab: React.FC<TabProps> = ({ icon, title }) => {
+const Tab: React.FC<TabProps> = ({ icon, title, isActive, href }) => {
   return (
-    <div className={s.tab}>
+    <a href={href} className={`${s.tab} ${isActive ? s.active : ""}`}>
       <div className={s.icon}>{icon}</div>
       <div className={s.title}>{title}</div>
-    </div>
+    </a>
   );
 };
 

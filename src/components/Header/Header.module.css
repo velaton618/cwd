@@ -1,9 +1,8 @@
 @import "../../vars.css";
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
   background-color: var(--gray-scale-00);
   padding: 16px var(--padding-x);
 }

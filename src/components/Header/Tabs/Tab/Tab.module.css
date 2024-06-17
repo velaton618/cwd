@@ -1,6 +1,16 @@
 .tab {
+  color: var(--gray-scale-40);
+  text-decoration: none;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
+
+  font-size: 14px;
+}
+
+.tab.active {
+  color: var(--gray-scale-70);
+  font-weight: bold;
 }

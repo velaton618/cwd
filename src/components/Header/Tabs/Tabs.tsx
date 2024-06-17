@@ -9,11 +9,36 @@ import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlin
 const Tabs = () => {
   return (
     <div className={s.tabs}>
-      <Tab title={"Лента"} icon={<HomeOutlinedIcon />} />
-      <Tab title={"Маркетплейс"} icon={<LocalMallOutlinedIcon />} />
-      <Tab title={"Рейтинги"} icon={<GroupOutlinedIcon />} />
-      <Tab title={"Cоревнования"} icon={<EmojiEventsOutlinedIcon />} />
-      <Tab title={"Организации"} icon={<AccountBalanceOutlinedIcon />} />
+      <Tab
+        href="#"
+        title={"Лента"}
+        icon={<HomeOutlinedIcon />}
+        isActive={true}
+      />
+      <Tab
+        isActive={false}
+        href="#"
+        title={"Маркетплейс"}
+        icon={<LocalMallOutlinedIcon />}
+      />
+      <Tab
+        isActive={false}
+        href="#"
+        title={"Рейтинги"}
+        icon={<GroupOutlinedIcon />}
+      />
+      <Tab
+        isActive={false}
+        href="#"
+        title={"Cоревнования"}
+        icon={<EmojiEventsOutlinedIcon />}
+      />
+      <Tab
+        isActive={false}
+        href="#"
+        title={"Организации"}
+        icon={<AccountBalanceOutlinedIcon />}
+      />
     </div>
   );
 };
