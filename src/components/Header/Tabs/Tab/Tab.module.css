@@ -8,6 +8,12 @@
   gap: 12px;
 
   font-size: 14px;
+
+  transition: color 0.1s ease-in-out;
+}
+
+.tab:hover {
+  color: var(--gray-scale-50);
 }
 
 .tab.active {

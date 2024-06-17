@@ -18,7 +18,7 @@ const Tabs = () => {
   };
 
   return (
-    <div className={s.tabs}>
+    <nav className={s.tabs}>
       <Tab
         href="/feed"
         title={"Лента"}
@@ -49,7 +49,7 @@ const Tabs = () => {
         title={"Организации"}
         icon={<AccountBalanceOutlinedIcon />}
       />
-    </div>
+    </nav>
   );
 };
 

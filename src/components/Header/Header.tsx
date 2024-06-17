@@ -5,11 +5,11 @@ import Tabs from "./Tabs/Tabs";
 
 function Header() {
   return (
-    <div className={s.header}>
+    <header className={s.header}>
       <Logo />
       <Tabs />
       <Options />
-    </div>
+    </header>
   );
 }
 
