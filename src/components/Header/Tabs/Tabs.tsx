@@ -7,35 +7,45 @@ import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
 import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlined";
 
 const Tabs = () => {
+  const path = window.location.href.split("://")[1].split("/")[1];
+
+  const tabsState = {
+    feed: path.includes("feed") || path === "",
+    marketplace: path.includes("marketplace"),
+    ratings: path.includes("ratings"),
+    competitions: path.includes("competitions"),
+    organization: path.includes("organizations"),
+  };
+
   return (
     <div className={s.tabs}>
       <Tab
-        href="#"
+        href="/feed"
         title={"Лента"}
         icon={<HomeOutlinedIcon />}
-        isActive={true}
+        isActive={tabsState.feed}
       />
       <Tab
-        isActive={false}
-        href="#"
+        isActive={tabsState.marketplace}
+        href="/marketplace"
         title={"Маркетплейс"}
         icon={<LocalMallOutlinedIcon />}
       />
       <Tab
-        isActive={false}
-        href="#"
+        isActive={tabsState.ratings}
+        href="/ratings"
         title={"Рейтинги"}
         icon={<GroupOutlinedIcon />}
       />
       <Tab
-        isActive={false}
-        href="#"
+        isActive={tabsState.competitions}
+        href="/competitions"
         title={"Cоревнования"}
         icon={<EmojiEventsOutlinedIcon />}
       />
       <Tab
-        isActive={false}
-        href="#"
+        isActive={tabsState.organization}
+        href="/organizations"
         title={"Организации"}
         icon={<AccountBalanceOutlinedIcon />}
       />
