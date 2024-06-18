@@ -1,5 +1,5 @@
-import React, { FC, ReactNode } from "react";
-import Header from "../components/Header/Header";
+import { FC } from "react";
+import Header from "../Header/Header";
 import { LayoutProps } from "./LayoutProps.interface";
 
 const Layout: FC<LayoutProps> = ({ children }) => {

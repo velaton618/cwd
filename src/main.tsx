@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./Layout/Layout.tsx";
+import Layout from "./components/Layout/Layout.tsx";
 import Marketplace from "./pages/Marketplace/Marketplace.tsx";
 import Ratings from "./pages/Ratings/Ratings.tsx";
 import Competitions from "./pages/Competitions/Competitions.tsx";
