@@ -1,0 +1,27 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter {
+  border: none;
+  background: none;
+
+  color: var(--gray-scale-50);
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+  font-weight: 548;
+  border-radius: 10px;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.filter.active {
+  color: var(--gray-scale-70);
+  background-color: var(--gray-scale-20);
+}

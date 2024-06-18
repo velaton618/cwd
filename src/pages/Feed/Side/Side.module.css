@@ -16,6 +16,10 @@
   background-color: var(--gray-scale-00);
 
   border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .side .filters .title {
