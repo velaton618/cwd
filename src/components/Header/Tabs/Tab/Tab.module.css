@@ -8,6 +8,7 @@
   gap: 12px;
 
   font-size: 14px;
+  font-weight: 548;
 
   transition: color 0.1s ease-in-out;
 }
@@ -18,5 +19,4 @@
 
 .tab.active {
   color: var(--gray-scale-70);
-  font-weight: bold;
 }
