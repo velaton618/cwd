@@ -1,0 +1,38 @@
+@import "../../variables.scss";
+
+.haveAccountText {
+  color: $gray-scale-40;
+  font-weight: 5000;
+  font-size: 14px;
+}
+
+.login {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.loginBtn {
+  height: 40px;
+  width: 100%;
+
+  background-color: $gray-scale-20;
+  border: 2px solid $gray-scale-20;
+  box-sizing: border-box;
+
+  outline: none;
+  color: $gray-scale-70;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 548;
+
+  margin-top: 24px;
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.loginBtn:hover {
+  background: none;
+}

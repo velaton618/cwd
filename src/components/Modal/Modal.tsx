@@ -8,9 +8,14 @@ import LoginText from "../LoginText/LoginText";
 import PhoneInput from "../PhoneInput/PhoneInput";
 import Registration from "../Registration/Registration";
 import SendButton from "../SendButton/SendButton";
+import { ModalStage } from "../../types/ModalStage";
+import RegisterText from "../RegisterText/RegisterText";
+import Login from "../Login/Login";
+import Rules from "../Rules/Rules";
 
 const Modal = () => {
   const isOpen = useAppSelector((state) => state.modal.isOpened);
+  const stage = useAppSelector((state) => state.modal.stage);
   const dispatch = useDispatch();
 
   function handleClick(e: React.MouseEvent<HTMLElement>) {
@@ -29,10 +34,25 @@ const Modal = () => {
         <CloseButton />
         <div className={s.content}>
           <img src={Logo} />
-          <LoginText />
-          <PhoneInput />
-          <SendButton />
-          <Registration />
+
+          {stage === ModalStage.Login && (
+            <>
+              <LoginText />
+              <PhoneInput />
+              <SendButton />
+              <Registration />
+            </>
+          )}
+
+          {stage === ModalStage.Register && (
+            <>
+              <RegisterText />
+              <PhoneInput />
+              <SendButton />
+              <Rules />
+              <Login />
+            </>
+          )}
         </div>
       </div>
     </div>

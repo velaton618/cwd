@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.text {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 578;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 5000;
+  color: $gray-scale-40;
+}
+
+@media screen and (max-width: $tabs-ad-1) {
+  .title {
+    font-size: 24px;
+  }
+}
