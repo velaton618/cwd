@@ -39,6 +39,8 @@ const Feed = () => {
             <ChatBubbleOutlineOutlinedIcon />4
           </div>
         </div>
+        <div className={s.separator} />
+        <div className={s.comments}>Comments...</div>
       </div>
       <div className={s.side}>
         <div className={s.filters}>Filters</div>
