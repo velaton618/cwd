@@ -5,4 +5,6 @@
   grid-template-columns: 20% 60% 20%;
   background-color: var(--gray-scale-00);
   padding: 16px var(--padding-x);
+
+  align-items: center;
 }
