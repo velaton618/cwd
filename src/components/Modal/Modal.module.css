@@ -59,7 +59,10 @@
 
 .content .title {
   font-size: 30px;
-  font-weight: 600;
+  line-height: 32px;
+  font-weight: 578;
+  color: var(--gray-scale-70);
+  text-align: center;
 }
 
 .content .description {
@@ -67,4 +70,157 @@
   font-size: 14px;
   font-weight: 500;
   color: var(--gray-scale-40);
+}
+
+.phoneInput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  color: var(--gray-scale-50);
+  margin-top: 32px;
+}
+
+.phoneInput label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.phoneInput .input {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-scale-20);
+
+  padding: 10px;
+  border-radius: 10px;
+  gap: 8px;
+}
+
+.phoneInput .flag {
+  width: 20px;
+}
+
+.phoneInput .input input {
+  outline: none;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: inherit;
+  color: var(--gray-scale-40);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sendBtn {
+  height: 40px;
+  width: 100%;
+
+  background-color: var(--gray-scale-70);
+  border: 2px solid var(--gray-scale-70);
+  box-sizing: border-box;
+
+  outline: none;
+  color: var(--gray-scale-00);
+  border-radius: 10px;
+
+  margin-top: 24px;
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.sendBtn:hover {
+  background: none;
+  color: var(--gray-scale-70);
+  font-weight: bold;
+}
+
+.noAccountText {
+  color: var(--gray-scale-40);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.sendBtn {
+  height: 40px;
+  width: 100%;
+
+  background-color: var(--gray-scale-70);
+  border: 2px solid var(--gray-scale-70);
+  box-sizing: border-box;
+
+  outline: none;
+  color: var(--gray-scale-00);
+  border-radius: 10px;
+
+  margin-top: 24px;
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.sendBtn:hover {
+  background: none;
+  color: var(--gray-scale-70);
+  font-weight: bold;
+}
+
+.sendBtn {
+  height: 40px;
+  width: 100%;
+
+  background-color: var(--gray-scale-70);
+  border: 2px solid var(--gray-scale-70);
+  box-sizing: border-box;
+
+  outline: none;
+  color: var(--gray-scale-00);
+  border-radius: 10px;
+
+  margin-top: 24px;
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.sendBtn:hover {
+  background: none;
+  color: var(--gray-scale-70);
+  font-weight: bold;
+}
+
+.registration {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.registerBtn {
+  height: 40px;
+  width: 100%;
+
+  background-color: var(--gray-scale-20);
+  border: 2px solid var(--gray-scale-20);
+  box-sizing: border-box;
+
+  outline: none;
+  color: var(--gray-scale-70);
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 548;
+
+  margin-top: 24px;
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.registerBtn:hover {
+  background: none;
+  color: var(--gray-scale-70);
 }
