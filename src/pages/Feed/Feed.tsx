@@ -1,4 +1,5 @@
 import s from "./Feed.module.scss";
+import MobilePost from "./MobilePost/MobilePost";
 import Post from "./Post/Post";
 import { PostProps } from "./Post/PostProps.interface";
 import Side from "./Side/Side";
@@ -24,6 +25,15 @@ const Feed = () => {
 
   return (
     <div className={s.feed}>
+      <MobilePost
+        subject={post.subject}
+        uploadDate={post.uploadDate}
+        title={post.title}
+        description={post.description}
+        images={post.images}
+        viewsCount={post.viewsCount}
+        commentsCount={post.commentsCount}
+      />
       <Post
         subject={post.subject}
         uploadDate={post.uploadDate}

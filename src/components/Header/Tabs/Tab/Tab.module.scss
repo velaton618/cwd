@@ -22,3 +22,30 @@
 .tab.active {
   color: $gray-scale-70;
 }
+@media screen and (max-width: $tabs-ad-1) {
+  .tab {
+    font-size: 12px;
+  }
+
+  .tab .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: $tabs-ad-2) {
+  .tab {
+    font-size: 10px;
+  }
+
+  .tab .icon svg {
+    width: 15px;
+    height: 15px;
+  }
+}
