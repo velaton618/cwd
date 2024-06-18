@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import s from "./CloseButton.module.scss";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
-import { closeModal } from "../../../redux/slices/modalSlice";
+import { closeModal } from "../../redux/slices/modalSlice";
 
 const CloseButton = () => {
   const dispatch = useDispatch();

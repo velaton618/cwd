@@ -1,6 +1,6 @@
-import s from "./Text.module.scss";
+import s from "./LoginText.module.scss";
 
-const Text = () => {
+const LoginText = () => {
   return (
     <div className={s.text}>
       <h1 className={s.title}>Вход на платформу</h1>
@@ -11,4 +11,4 @@ const Text = () => {
   );
 };
 
-export default Text;
+export default LoginText;

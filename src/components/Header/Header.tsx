@@ -10,6 +10,7 @@ function Header() {
       <Logo />
       <Tabs />
       <Options />
+
       <Menu />
     </header>
   );

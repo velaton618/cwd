@@ -3,11 +3,11 @@ import { useAppSelector } from "../../redux/hooks";
 import s from "./Modal.module.scss";
 import { closeModal } from "../../redux/slices/modalSlice";
 import Logo from "../../assets/modal/logo.svg";
-import CloseButton from "./CloseButton/CloseButton";
-import Text from "./CloseButton/Text/Text";
-import PhoneInput from "./PhoneInput/PhoneInput";
-import Registration from "./Registration/Registration";
-import SendButton from "./SendButton/SendButton";
+import CloseButton from "../CloseButton/CloseButton";
+import LoginText from "../LoginText/LoginText";
+import PhoneInput from "../PhoneInput/PhoneInput";
+import Registration from "../Registration/Registration";
+import SendButton from "../SendButton/SendButton";
 
 const Modal = () => {
   const isOpen = useAppSelector((state) => state.modal.isOpened);
@@ -29,7 +29,7 @@ const Modal = () => {
         <CloseButton />
         <div className={s.content}>
           <img src={Logo} />
-          <Text />
+          <LoginText />
           <PhoneInput />
           <SendButton />
           <Registration />
