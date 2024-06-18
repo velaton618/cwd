@@ -4,9 +4,12 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { useState } from "react";
 import RuFlag from "../../../assets/ru_flag.svg";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import { useAppDispatch } from "../../../redux/hooks";
+import { openModal } from "../../../redux/slices/modalSlice";
 
 const Options = () => {
   const [language, setLanguage] = useState("ru");
+  const dispatch = useAppDispatch();
 
   const handleChange = (event: SelectChangeEvent) => {
     setLanguage(event.target.value);
@@ -33,7 +36,7 @@ const Options = () => {
         </MenuItem>
       </Select>
 
-      <button className={s.profile}>
+      <button className={s.profile} onClick={() => dispatch(openModal())}>
         <PersonOutlineOutlinedIcon />
       </button>
     </div>

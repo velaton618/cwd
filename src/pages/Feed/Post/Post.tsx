@@ -1,6 +1,8 @@
 import s from "./Post.module.css";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import { FC } from "react";
+import { PostProps } from "./PostProps.interface";
 
 const Post: FC<PostProps> = ({
   subject,
@@ -25,8 +27,10 @@ const Post: FC<PostProps> = ({
           <button className={s.btnMore}>Читать больше...</button>
         </p>
         <div className={s.photos}>
-          {images.map((url: string) => (
-            <img className={s.photo} src={url} />
+          {images.map((url: string, index: number) => (
+            <div key={index}>
+              <img className={s.photo} src={url} />
+            </div>
           ))}
         </div>
       </div>
