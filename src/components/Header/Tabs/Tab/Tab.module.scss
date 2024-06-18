@@ -1,5 +1,7 @@
+@import "../../../../variables.scss";
+
 .tab {
-  color: var(--gray-scale-40);
+  color: $gray-scale-40;
   text-decoration: none;
 
   display: flex;
@@ -14,9 +16,9 @@
 }
 
 .tab:hover {
-  color: var(--gray-scale-50);
+  color: $gray-scale-50;
 }
 
 .tab.active {
-  color: var(--gray-scale-70);
+  color: $gray-scale-70;
 }

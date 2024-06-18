@@ -1,6 +1,6 @@
 import React from "react";
 
-import s from "./Tab.module.css";
+import s from "./Tab.module.scss";
 import { TabProps } from "./TabProps.interface";
 
 const Tab: React.FC<TabProps> = ({ icon, title, isActive, href }) => {

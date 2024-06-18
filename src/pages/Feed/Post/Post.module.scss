@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 .post {
   padding: 24px;
   display: flex;
@@ -5,7 +7,7 @@
   gap: 12px;
   border-radius: 20px;
 
-  background-color: var(--gray-scale-00);
+  background-color: $gray-scale-00;
 }
 
 .post .info {
@@ -14,13 +16,13 @@
   font-size: 12px;
   gap: 6px;
 
-  color: var(--gray-scale-40);
+  color: $gray-scale-40;
 }
 
 .post .info .separator {
   width: 3px;
   height: 3px;
-  background-color: var(--gray-scale-40);
+  background-color: $gray-scale-40;
   border-radius: 100%;
 }
 
@@ -32,20 +34,20 @@
 
 .post .content .title {
   font-size: 20px;
-  font-weight: 600;
-  color: var(--gray-scale-70);
+  font-weight: 6000;
+  color: $gray-scale-70;
 }
 
 .post .content .description {
   font-size: 14px;
-  font-weight: 500;
-  color: var(--gray-scale-50);
+  font-weight: 5000;
+  color: $gray-scale-50;
 }
 
 .post .content .description .btnMore {
   background: none;
   border: none;
-  color: var(--gray-scale-60);
+  color: $gray-scale-60;
   font-weight: 548;
 
   cursor: pointer;
@@ -53,7 +55,7 @@
 }
 
 .post .content .description .btnMore:hover {
-  color: var(--gray-scale-70);
+  color: $gray-scale-50;
 }
 
 .post .content .photos {
@@ -74,9 +76,9 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  color: var(--gray-scale-50);
+  color: $gray-scale-50;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 5000;
 }
 
 .post .stats .views {
@@ -96,5 +98,5 @@
 .post .separator {
   width: 100%;
   height: 1px;
-  background-color: var(--gray-scale-20);
+  background-color: $gray-scale-20;
 }

@@ -1,4 +1,4 @@
-import s from "./Registration.module.css";
+import s from "./Registration.module.scss";
 
 const Registration = () => {
   return (

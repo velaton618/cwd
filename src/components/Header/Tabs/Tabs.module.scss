@@ -1,0 +1,15 @@
+@import "../../../variables.scss";
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: $ad-1) {
+  .tabs {
+    display: none;
+  }
+}

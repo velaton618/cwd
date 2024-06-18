@@ -1,3 +1,5 @@
+@import "../../../../variables.scss";
+
 .text {
   margin-top: 24px;
   display: flex;
@@ -9,13 +11,12 @@
   font-size: 30px;
   line-height: 32px;
   font-weight: 578;
-  color: var(--gray-scale-70);
   text-align: center;
 }
 
 .description {
   text-align: center;
   font-size: 14px;
-  font-weight: 500;
-  color: var(--gray-scale-40);
+  font-weight: 5000;
+  color: $gray-scale-40;
 }

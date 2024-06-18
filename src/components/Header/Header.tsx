@@ -1,7 +1,8 @@
 import Logo from "./Logo/Logo";
-import s from "./Header.module.css";
+import s from "./Header.module.scss";
 import Options from "./Options/Options";
 import Tabs from "./Tabs/Tabs";
+import Menu from "./Menu/Menu";
 
 function Header() {
   return (
@@ -9,6 +10,7 @@ function Header() {
       <Logo />
       <Tabs />
       <Options />
+      <Menu />
     </header>
   );
 }

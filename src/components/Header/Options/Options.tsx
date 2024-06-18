@@ -1,5 +1,5 @@
 import { MenuItem } from "@mui/material";
-import s from "./Options.module.css";
+import s from "./Options.module.scss";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { useState } from "react";
 import RuFlag from "../../../assets/ru_flag.svg";

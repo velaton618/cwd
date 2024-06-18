@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.feed {
+  margin: 26px $padding-x;
+
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+  gap: 24px;
+}
+
+@media screen and (max-width: $ad-2) {
+  .feed {
+    grid-template-columns: 100% 0%;
+    margin: $mob-padding-x;
+  }
+}

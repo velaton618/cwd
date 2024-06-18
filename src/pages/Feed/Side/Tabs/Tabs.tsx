@@ -1,9 +1,9 @@
 import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
-import Certificate from "../../../../assets/icons/certificate.svg";
-import Award from "../../../../assets/icons/award.svg";
 import VideocamOutlinedIcon from "@mui/icons-material/VideocamOutlined";
 import { useState } from "react";
-import s from "./Tabs.module.css";
+import s from "./Tabs.module.scss";
+import Certificate from "./Icons/Certificate";
+import Awards from "./Icons/Awards";
 
 const Tabs = () => {
   const [filters, setFilters] = useState({
@@ -12,6 +12,8 @@ const Tabs = () => {
     video: false,
     awards: false,
   });
+  const GRAY_SCALE_70 = "#353754";
+  const GRAY_SCALE_50 = "#7B7EA5";
 
   return (
     <div className={s.tabs}>
@@ -40,7 +42,9 @@ const Tabs = () => {
         }
         className={`${s.filter} ${filters.results && s.active}`}
       >
-        <img src={Certificate} />
+        <Certificate
+          color={`${filters.results ? GRAY_SCALE_70 : GRAY_SCALE_50}`}
+        />
         Результаты соревнований
       </button>
       <button
@@ -68,7 +72,7 @@ const Tabs = () => {
         }
         className={`${s.filter} ${filters.awards && s.active}`}
       >
-        <img src={Award} />
+        <Awards color={`${filters.results ? GRAY_SCALE_70 : GRAY_SCALE_50}`} />
         Достижения
       </button>
     </div>

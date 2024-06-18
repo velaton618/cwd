@@ -1,14 +1,16 @@
+@import "../../../variables.scss";
+
 .closeBtn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 00;
+  right: 00;
 
   border: none;
   background: none;
   outline: none;
   margin: 21px;
 
-  color: var(--gray-scale-40);
+  color: $gray-scale-40;
 
   cursor: pointer;
 }

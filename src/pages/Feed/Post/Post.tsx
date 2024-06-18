@@ -1,4 +1,4 @@
-import s from "./Post.module.css";
+import s from "./Post.module.scss";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import { FC } from "react";

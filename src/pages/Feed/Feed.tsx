@@ -1,4 +1,4 @@
-import s from "./Feed.module.css";
+import s from "./Feed.module.scss";
 import Post from "./Post/Post";
 import { PostProps } from "./Post/PostProps.interface";
 import Side from "./Side/Side";

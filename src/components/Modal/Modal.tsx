@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "../../redux/hooks";
-import s from "./Modal.module.css";
+import s from "./Modal.module.scss";
 import { closeModal } from "../../redux/slices/modalSlice";
 import Logo from "../../assets/modal/logo.svg";
 import CloseButton from "./CloseButton/CloseButton";

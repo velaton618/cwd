@@ -1,0 +1,19 @@
+@import "../../variables.scss";
+
+.header {
+  height: 64px;
+
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  background-color: $gray-scale-00;
+  padding: 0px $padding-x;
+
+  align-items: center;
+}
+
+@media screen and (max-width: $ad-1) {
+  .header {
+    padding: 0px $mob-padding-x;
+    grid-template-columns: 50% 50%;
+  }
+}

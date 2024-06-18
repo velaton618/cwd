@@ -1,4 +1,4 @@
-import s from "./Side.module.css";
+import s from "./Side.module.scss";
 import Tabs from "./Tabs/Tabs";
 
 const Side = () => {
@@ -6,7 +6,6 @@ const Side = () => {
     <div className={s.side}>
       <div className={s.filters}>
         <b className={s.title}>Фильтр Ленты</b>
-        {/* <Tabs /> */}
         <Tabs />
       </div>
       <div className={s.ads}>

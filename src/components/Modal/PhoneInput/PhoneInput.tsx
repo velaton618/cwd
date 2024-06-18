@@ -1,4 +1,4 @@
-import s from "./PhoneInput.module.css";
+import s from "./PhoneInput.module.scss";
 import RuFlag from "../../../assets/ru_flag.svg";
 import { FC } from "react";
 import { PhoneInputProps } from "./PhoneInputProps.interface";

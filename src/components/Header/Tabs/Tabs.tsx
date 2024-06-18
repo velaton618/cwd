@@ -1,5 +1,5 @@
 import Tab from "./Tab/Tab";
-import s from "./Tabs.module.css";
+import s from "./Tabs.module.scss";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
