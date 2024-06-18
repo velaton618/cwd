@@ -72,7 +72,7 @@ const Tabs = () => {
         }
         className={`${s.filter} ${filters.awards && s.active}`}
       >
-        <Awards color={`${filters.results ? GRAY_SCALE_70 : GRAY_SCALE_50}`} />
+        <Awards color={`${filters.awards ? GRAY_SCALE_70 : GRAY_SCALE_50}`} />
         Достижения
       </button>
     </div>
