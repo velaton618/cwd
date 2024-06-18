@@ -3,3 +3,26 @@
   justify-content: center;
   align-items: center;
 }
+
+.lang {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.profile {
+  border: none;
+  background-color: var(--gray-scale-20);
+  color: var(--gray-scale-70);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.profile:hover {
+  color: var(--gray-scale-20);
+  background-color: var(--gray-scale-70);
+}

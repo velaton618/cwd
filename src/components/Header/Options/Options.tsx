@@ -1,8 +1,9 @@
 import { MenuItem } from "@mui/material";
 import s from "./Options.module.css";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-import ReactCountryFlag from "react-country-flag";
 import { useState } from "react";
+import RuFlag from "../../../assets/ru_flag.svg";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 
 const Options = () => {
   const [language, setLanguage] = useState("ru");
@@ -14,14 +15,27 @@ const Options = () => {
   return (
     <div className={s.options}>
       <Select
+        sx={{
+          "& fieldset": { border: "none" },
+          "& .languageItem": {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          },
+        }}
         value={language}
         onChange={handleChange}
         className={`${s.languageSelect} demo-select-small-label`}
       >
-        <MenuItem value={"ru"}>
-          <ReactCountryFlag svg countryCode="RU" />
+        <MenuItem className="languageItem" value={"ru"}>
+          <img width={30} height={12} src={RuFlag} />
+          <span className={s.lang}>RU</span>
         </MenuItem>
       </Select>
+
+      <button className={s.profile}>
+        <PersonOutlineOutlinedIcon />
+      </button>
     </div>
   );
 };
