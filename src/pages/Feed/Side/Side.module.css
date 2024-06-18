@@ -1,0 +1,24 @@
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.side .ads {
+  border-radius: 20px;
+  background-color: var(--gray-scale-00);
+  overflow: hidden;
+}
+
+.side .filters {
+  padding: 24px;
+  height: 294px;
+  background-color: var(--gray-scale-00);
+
+  border-radius: 20px;
+}
+
+.side .filters .title {
+  font-weight: 600;
+  font-size: 20px;
+}
