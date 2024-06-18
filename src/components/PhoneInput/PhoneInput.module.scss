@@ -9,6 +9,10 @@
   margin-top: 32px;
 }
 
+.phoneInput .input.error {
+  border: 1px solid red;
+}
+
 .phoneInput label {
   font-size: 12px;
   font-weight: 4000;
@@ -41,4 +45,10 @@
   color: $gray-scale-40;
   font-size: 14px;
   font-weight: 5000;
+}
+
+.error {
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
 }
