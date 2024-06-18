@@ -7,9 +7,14 @@ import Logo from "../../../assets/modal/logo.svg";
 import { useAppSelector } from "../../../redux/hooks";
 import { useDispatch } from "react-redux";
 import { closeModal } from "../../../redux/slices/modalSlice";
+import { ModalStage } from "../../../types/ModalStage";
+import RegisterText from "../../RegisterText/RegisterText";
+import Rules from "../../Rules/Rules";
+import Login from "../../Login/Login";
 
 const MobileModal = () => {
   const isOpened = useAppSelector((state) => state.modal.isOpened);
+  const stage = useAppSelector((state) => state.modal.stage);
   const dispatch = useDispatch();
 
   function handleClick(e: React.MouseEvent<HTMLElement>) {
@@ -27,11 +32,25 @@ const MobileModal = () => {
         className={`${s.modal} ${isOpened ? s.active : ""}`}
       >
         <div className={s.inner}>
-          <img className={s.logo} src={Logo} />
-          <LoginText />
-          <PhoneInput />
-          <SendButton />
-          <Registration />
+          <img src={Logo} className={s.logo} />
+          {stage === ModalStage.Login && (
+            <>
+              <LoginText />
+              <PhoneInput />
+              <SendButton />
+              <Registration />
+            </>
+          )}
+
+          {stage === ModalStage.Register && (
+            <>
+              <RegisterText />
+              <PhoneInput />
+              <SendButton />
+              <Rules />
+              <Login />
+            </>
+          )}
         </div>
       </div>
     </>
