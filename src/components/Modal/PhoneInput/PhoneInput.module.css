@@ -1,0 +1,42 @@
+.phoneInput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  color: var(--gray-scale-50);
+  margin-top: 32px;
+}
+
+.phoneInput label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.phoneInput .input {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-scale-20);
+
+  padding: 10px;
+  border-radius: 10px;
+  gap: 8px;
+}
+
+.phoneInput .flag {
+  width: 20px;
+}
+
+.phoneInput .input input {
+  outline: none;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: inherit;
+  color: var(--gray-scale-40);
+  font-size: 14px;
+  font-weight: 500;
+}

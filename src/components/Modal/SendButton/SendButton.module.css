@@ -1,0 +1,23 @@
+.sendBtn {
+  height: 40px;
+  width: 100%;
+
+  background-color: var(--gray-scale-70);
+  border: 2px solid var(--gray-scale-70);
+  box-sizing: border-box;
+
+  outline: none;
+  color: var(--gray-scale-00);
+  border-radius: 10px;
+
+  margin-top: 24px;
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.sendBtn:hover {
+  background: none;
+  color: var(--gray-scale-70);
+  font-weight: bold;
+}

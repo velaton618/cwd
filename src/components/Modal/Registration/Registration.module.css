@@ -1,0 +1,36 @@
+.noAccountText {
+  color: var(--gray-scale-40);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.registration {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.registerBtn {
+  height: 40px;
+  width: 100%;
+
+  background-color: var(--gray-scale-20);
+  border: 2px solid var(--gray-scale-20);
+  box-sizing: border-box;
+
+  outline: none;
+  color: var(--gray-scale-70);
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 548;
+
+  margin-top: 24px;
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.registerBtn:hover {
+  background: none;
+}
