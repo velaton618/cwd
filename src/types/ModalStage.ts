@@ -1,5 +1,11 @@
 export enum ModalStage {
   Login,
   Register,
-  Code,
+  LoginCode,
+  RegisterCode,
+  SportsChoice,
+  AthletesChoice,
+  OrganizationsChoice,
+  Profile,
+  Done,
 }

@@ -1,9 +1,11 @@
+import React from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { setError, setStage } from "../../redux/slices/modalSlice";
 import { ModalStage } from "../../types/ModalStage";
 import s from "./SendButton.module.scss";
+import ISendButtonProps from "../../types/ISendButtonProps";
 
-const SendButton = () => {
+const SendButton: React.FC<ISendButtonProps> = ({ nextStage }) => {
   const phone = useAppSelector((state) => state.modal.phone);
   const dispatch = useAppDispatch();
 
@@ -20,7 +22,7 @@ const SendButton = () => {
       dispatch(setError(ERRORS.invalid));
     } else {
       dispatch(setError(""));
-      dispatch(setStage(ModalStage.Code));
+      dispatch(setStage(nextStage));
     }
   }
 

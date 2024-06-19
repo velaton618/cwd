@@ -6,7 +6,7 @@ import Registration from "../../Registration/Registration";
 import Logo from "../../../assets/modal/logo.svg";
 import { useAppSelector } from "../../../redux/hooks";
 import { useDispatch } from "react-redux";
-import { closeModal } from "../../../redux/slices/modalSlice";
+import { closeModal, setStage } from "../../../redux/slices/modalSlice";
 import { ModalStage } from "../../../types/ModalStage";
 import RegisterText from "../../RegisterText/RegisterText";
 import Rules from "../../Rules/Rules";
@@ -26,6 +26,8 @@ const MobileModal = () => {
     }
   }
 
+  if (stage === ModalStage.Done) dispatch(closeModal());
+
   return (
     <>
       <div className={`${s.modalBlurer} ${isOpened && s.active}`}></div>
@@ -36,11 +38,12 @@ const MobileModal = () => {
       >
         <div className={s.inner}>
           <img src={Logo} className={s.logo} />
+
           {stage === ModalStage.Login && (
             <>
               <LoginText />
               <PhoneInput />
-              <SendButton />
+              <SendButton nextStage={ModalStage.LoginCode} />
               <Registration />
             </>
           )}
@@ -49,17 +52,34 @@ const MobileModal = () => {
             <>
               <RegisterText />
               <PhoneInput />
-              <SendButton />
+              <SendButton nextStage={ModalStage.RegisterCode} />
               <Rules />
               <Login />
             </>
           )}
 
-          {stage === ModalStage.Code && (
+          {stage === ModalStage.LoginCode && (
             <>
               <CodeText />
               <CodeInput />
-              <CodeButton />
+              <CodeButton
+                onClick={(_) => {
+                  dispatch(setStage(ModalStage.Done));
+                  dispatch(closeModal());
+                }}
+              />
+            </>
+          )}
+
+          {stage === ModalStage.RegisterCode && (
+            <>
+              <CodeText />
+              <CodeInput />
+              <CodeButton
+                onClick={(_) => {
+                  dispatch(setStage(ModalStage.SportsChoice));
+                }}
+              />
             </>
           )}
         </div>

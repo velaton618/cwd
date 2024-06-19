@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { useAppSelector } from "../../redux/hooks";
 import s from "./Modal.module.scss";
-import { closeModal } from "../../redux/slices/modalSlice";
+import { closeModal, setStage } from "../../redux/slices/modalSlice";
 import Logo from "../../assets/modal/logo.svg";
 import CloseButton from "../CloseButton/CloseButton";
 import LoginText from "../LoginText/LoginText";
@@ -27,6 +27,8 @@ const Modal = () => {
     }
   }
 
+  if (stage === ModalStage.Done) dispatch(closeModal());
+
   return (
     <div
       className={`${s.modal} ${isOpen ? s.active : ""}`}
@@ -42,7 +44,7 @@ const Modal = () => {
             <>
               <LoginText />
               <PhoneInput />
-              <SendButton />
+              <SendButton nextStage={ModalStage.LoginCode} />
               <Registration />
             </>
           )}
@@ -51,17 +53,34 @@ const Modal = () => {
             <>
               <RegisterText />
               <PhoneInput />
-              <SendButton />
+              <SendButton nextStage={ModalStage.RegisterCode} />
               <Rules />
               <Login />
             </>
           )}
 
-          {stage === ModalStage.Code && (
+          {stage === ModalStage.LoginCode && (
             <>
               <CodeText />
               <CodeInput />
-              <CodeButton />
+              <CodeButton
+                onClick={(_) => {
+                  dispatch(setStage(ModalStage.Done));
+                  dispatch(closeModal());
+                }}
+              />
+            </>
+          )}
+
+          {stage === ModalStage.RegisterCode && (
+            <>
+              <CodeText />
+              <CodeInput />
+              <CodeButton
+                onClick={(_) => {
+                  dispatch(setStage(ModalStage.SportsChoice));
+                }}
+              />
             </>
           )}
         </div>
