@@ -69,7 +69,7 @@ const SportsChoice = () => {
         onClick={() => {
           setSelected({
             ...selected,
-            sambo: !selected.skating,
+            sambo: !selected.sambo,
           });
         }}
       >
