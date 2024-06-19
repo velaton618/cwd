@@ -49,12 +49,14 @@ const Post: FC<IPostProps> = ({
       </div>
       <div className={s.separator} />
       <div className={s.comments}>
-        {comments?.map((comment: IComment) => (
-          <div className={s.container}>
+        {comments?.map((comment: IComment, index: number) => (
+          <div key={index} className={s.container}>
             <Comment comment={comment} />
             <div className={s.subComments}>
-              {comment?.comments?.map((comment: IComment) => (
-                <Comment comment={comment} />
+              {comment?.comments?.map((comment: IComment, index: number) => (
+                <div key={index}>
+                  <Comment comment={comment} />
+                </div>
               ))}
             </div>
           </div>
