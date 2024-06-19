@@ -1,13 +1,6 @@
 @import "../../variables.scss";
 
 .container {
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  //
-  // padding: 10px 24px;
-  // margin-top: 16px;
-
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -36,6 +29,9 @@
 
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+
+  font-size: 14px;
+  font-weight: 548;
 }
 
 .backBtn,

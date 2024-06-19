@@ -10,11 +10,13 @@
 
   border-top: 1px solid $gray-scale-20;
   border-bottom: 1px solid $gray-scale-20;
+
+  overflow-y: auto;
 }
 
 .container .search {
   display: grid;
-  grid-template-columns: 85% 15%;
+  grid-template-columns: 80% auto;
   grid-template-rows: 100%;
   gap: 12px;
 }
@@ -56,6 +58,9 @@
   border: 2px solid $gray-scale-70;
   border-radius: 10px;
 
+  font-size: 14px;
+  font-weight: 548;
+
   cursor: pointer;
 
   transition: all 0.1s ease-in-out;
@@ -64,4 +69,46 @@
 .container .search .button:hover {
   background: none;
   color: $gray-scale-70;
+}
+
+.list {
+  margin-top: 24px;
+
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 54px;
+}
+
+.list .person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list .person .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.list .person .info {
+  width: 100%;
+  padding-left: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list .person .name {
+  font-size: 14px;
+  font-weight: 548;
+  color: $gray-scale-70;
+}
+
+.list .person .subject {
+  font-size: 14px;
+  font-weight: 500;
+  color: $gray-scale-50;
 }

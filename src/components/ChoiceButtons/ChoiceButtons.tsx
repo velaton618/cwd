@@ -15,7 +15,7 @@ const ChoiceButtons: React.FC<IChoiceButtonsProps> = ({ step, stepsCount }) => {
       stage = ModalStage.AthletesChoice;
     } else if (step === 2) {
       stage = ModalStage.OrganizationsChoice;
-    } else if (step === 4) {
+    } else if (step === 3) {
       stage = ModalStage.Profile;
     }
 

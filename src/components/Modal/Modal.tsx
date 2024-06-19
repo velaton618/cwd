@@ -19,6 +19,8 @@ import ChoiceTitle from "../ChoiceTitle/ChoiceTitle";
 import SportsChoice from "../SportsChoice/SportsChoice";
 import ChoiceButtons from "../ChoiceButtons/ChoiceButtons";
 import AthletesChoice from "../AthletesChoice/AthletesChoice";
+import OrganizationsChoice from "../OrganizationsChoice/OrganizationsChoice";
+import ProfileStage from "../ProfileStage/ProfileStage";
 
 const Modal = () => {
   const isOpen = useAppSelector((state) => state.modal.isOpened);
@@ -35,7 +37,7 @@ const Modal = () => {
 
   return (
     <div
-      className={`${s.modal} ${isOpen ? s.active : ""} ${stage === ModalStage.SportsChoice || stage === ModalStage.AthletesChoice || stage === ModalStage.OrganizationsChoice ? s.big : ""}`}
+      className={`${s.modal} ${isOpen ? s.active : ""} ${stage === ModalStage.SportsChoice || stage === ModalStage.AthletesChoice || stage === ModalStage.OrganizationsChoice || stage === ModalStage.Profile ? s.big : ""}`}
       id="modal"
       onClick={handleClick}
     >
@@ -115,9 +117,30 @@ const Modal = () => {
             </>
           )}
 
-          {stage === ModalStage.OrganizationsChoice && <>Not yet done</>}
+          {stage === ModalStage.OrganizationsChoice && (
+            <>
+              <ChoiceTitle
+                step={3}
+                stepsCount={4}
+                title="Выберите спортивные организации"
+                description="Выберите  организации из списка предложенных."
+              />
+              <OrganizationsChoice />
+              <ChoiceButtons step={3} stepsCount={4} />
+            </>
+          )}
 
-          {stage === ModalStage.Profile && <>Not yet done</>}
+          {stage === ModalStage.Profile && (
+            <>
+              <ChoiceTitle
+                step={4}
+                stepsCount={4}
+                title="Заполните основные данные"
+              />
+              <ProfileStage />
+              <ChoiceButtons step={4} stepsCount={4} />
+            </>
+          )}
         </div>
       </div>
     </div>
