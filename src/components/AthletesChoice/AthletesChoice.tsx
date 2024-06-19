@@ -1,17 +1,11 @@
+import Search from "../Search/Search";
 import s from "./AthletesChoice.module.scss";
-import SearchIcon from "@mui/icons-material/Search";
 import Checkbox from "@mui/material/Checkbox";
 
 const AthletesChoice = () => {
   return (
     <div className={s.container}>
-      <div className={s.search}>
-        <div className={s.inputContainer}>
-          <SearchIcon />
-          <input className={s.input} placeholder="Поиск" />
-        </div>
-        <button className={s.button}>Найти</button>
-      </div>
+      <Search />
       <div className={s.list}>
         <div className={s.person}>
           <img className={s.avatar} src="/athletes/1.png" />

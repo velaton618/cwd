@@ -1,0 +1,58 @@
+@import "../../variables.scss";
+
+.search {
+  display: grid;
+  grid-template-columns: 80% auto;
+  grid-template-rows: 100%;
+  gap: 12px;
+}
+
+.search .inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  height: 40px;
+  padding: 12px 16px;
+
+  border-radius: 10px;
+  background-color: $gray-scale-10;
+  color: $gray-scale-40;
+}
+
+.search .inputContainer input {
+  background: inherit;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  color: $gray-scale-70;
+
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.search .inputContainer input::placeholder {
+  color: $gray-scale-40;
+}
+
+.search .button {
+  background: $gray-scale-70;
+  color: $gray-scale-00;
+
+  border: 2px solid $gray-scale-70;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 548;
+
+  cursor: pointer;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.search .button:hover {
+  background: none;
+  color: $gray-scale-70;
+}

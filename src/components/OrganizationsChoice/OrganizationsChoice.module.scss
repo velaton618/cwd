@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+
+.container {
+  height: 85%;
+  width: 100%;
+  padding-top: 28px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding-bottom: 16px;
+
+  border-top: 1px solid $gray-scale-20;
+  border-bottom: 1px solid $gray-scale-20;
+
+  overflow-y: auto;
+}
+
+.list {
+  margin-top: 24px;
+
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 54px;
+}
+
+.list .organization {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list .organization .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.list .organization .info {
+  width: 100%;
+  padding-left: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list .organization .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+  font-weight: 548;
+  color: $gray-scale-70;
+  line-height: 1.2;
+  max-height: calc(1.2em * 2);
+}
