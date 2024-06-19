@@ -9,6 +9,12 @@
   gap: 24px;
 }
 
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 @media screen and (max-width: $ad-2) {
   .feed {
     grid-template-columns: 100% 0%;

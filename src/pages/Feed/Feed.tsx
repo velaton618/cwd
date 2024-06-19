@@ -22,27 +22,47 @@ const Feed = () => {
     viewsCount: "4.1 K",
     commentsCount: "4",
   };
-
   return (
     <div className={s.feed}>
-      <MobilePost
-        subject={post.subject}
-        uploadDate={post.uploadDate}
-        title={post.title}
-        description={post.description}
-        images={post.images}
-        viewsCount={post.viewsCount}
-        commentsCount={post.commentsCount}
-      />
-      <Post
-        subject={post.subject}
-        uploadDate={post.uploadDate}
-        title={post.title}
-        description={post.description}
-        images={post.images}
-        viewsCount={post.viewsCount}
-        commentsCount={post.commentsCount}
-      />
+      <div className={s.posts}>
+        <MobilePost
+          subject={post.subject}
+          uploadDate={post.uploadDate}
+          title={post.title}
+          description={post.description}
+          images={post.images}
+          viewsCount={post.viewsCount}
+          commentsCount={post.commentsCount}
+        />
+        <MobilePost
+          subject={post.subject}
+          uploadDate={post.uploadDate}
+          title={post.title}
+          description={post.description}
+          images={post.images}
+          viewsCount={post.viewsCount}
+          commentsCount={post.commentsCount}
+        />
+
+        <Post
+          subject={post.subject}
+          uploadDate={post.uploadDate}
+          title={post.title}
+          description={post.description}
+          images={post.images}
+          viewsCount={post.viewsCount}
+          commentsCount={post.commentsCount}
+        />
+        <Post
+          subject={post.subject}
+          uploadDate={post.uploadDate}
+          title={post.title}
+          description={post.description}
+          images={post.images}
+          viewsCount={post.viewsCount}
+          commentsCount={post.commentsCount}
+        />
+      </div>
       <Side />
     </div>
   );
