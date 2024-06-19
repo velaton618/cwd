@@ -1,7 +1,6 @@
 import React from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { setError, setStage } from "../../redux/slices/modalSlice";
-import { ModalStage } from "../../types/ModalStage";
 import s from "./SendButton.module.scss";
 import ISendButtonProps from "../../types/ISendButtonProps";
 
