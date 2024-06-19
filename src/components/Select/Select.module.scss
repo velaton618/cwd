@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+
+.select {
+  border: none;
+  outline: none;
+
+  border-radius: 10px;
+  background: $gray-scale-20;
+  color: $gray-scale-70;
+
+  width: 100%;
+  padding: 10px 30px 10px 12px;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select.placeholder {
+  color: $gray-scale-40;
+}
