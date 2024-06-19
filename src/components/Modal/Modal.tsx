@@ -100,7 +100,7 @@ const Modal = () => {
                 title="Выберите вид спорта"
               />
               <SportsChoice />
-              <ChoiceButtons step={1} stepsCount={4} />
+              <ChoiceButtons step={1} />
             </>
           )}
 
@@ -113,7 +113,7 @@ const Modal = () => {
                 description="Выберите одного или нескольких спортсменов из списка предложенных."
               />
               <AthletesChoice />
-              <ChoiceButtons step={2} stepsCount={4} />
+              <ChoiceButtons step={2} />
             </>
           )}
 
@@ -126,7 +126,7 @@ const Modal = () => {
                 description="Выберите  организации из списка предложенных."
               />
               <OrganizationsChoice />
-              <ChoiceButtons step={3} stepsCount={4} />
+              <ChoiceButtons step={3} />
             </>
           )}
 
@@ -138,7 +138,7 @@ const Modal = () => {
                 title="Заполните основные данные"
               />
               <ProfileStage />
-              <ChoiceButtons step={4} stepsCount={4} />
+              <ChoiceButtons step={4} />
             </>
           )}
         </div>

@@ -5,7 +5,7 @@ import { useAppDispatch } from "../../redux/hooks";
 import { setStage } from "../../redux/slices/modalSlice";
 import { ModalStage } from "../../types/ModalStage";
 
-const ChoiceButtons: React.FC<IChoiceButtonsProps> = ({ step, stepsCount }) => {
+const ChoiceButtons: React.FC<IChoiceButtonsProps> = ({ step }) => {
   const dispatch = useAppDispatch();
 
   function nextStage() {
