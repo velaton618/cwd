@@ -14,7 +14,7 @@ const Select: React.FC<ISelectProps> = ({ placeholder, options }) => {
       <option className={s.placeholder} value="" disabled selected>
         {placeholder}
       </option>
-      {options?.map((option, index: number) => <option>{option}</option>)}
+      {options?.map((option) => <option>{option}</option>)}
     </select>
   );
 };
