@@ -1,8 +1,8 @@
+import MobilePost from "../../components/MobilePost/MobilePost";
+import Post from "../../components/Post/Post";
+import { PostProps } from "../../components/Post/PostProps.interface";
+import Side from "../../components/Side/Side";
 import s from "./Feed.module.scss";
-import MobilePost from "./MobilePost/MobilePost";
-import Post from "./Post/Post";
-import { PostProps } from "./Post/PostProps.interface";
-import Side from "./Side/Side";
 
 const Feed = () => {
   const post: PostProps = {

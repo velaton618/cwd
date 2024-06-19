@@ -1,8 +1,9 @@
-@import "../../../variables.scss";
+@import "../../variables.scss";
 
 .post {
+  display: none;
+
   padding: 24px;
-  display: flex;
   flex-direction: column;
   gap: 12px;
   border-radius: 20px;
@@ -58,16 +59,7 @@
   color: $gray-scale-50;
 }
 
-.post .content .photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.post .content .photos .photo {
+.photo {
   width: 100%;
   height: auto;
 }
@@ -103,6 +95,12 @@
 
 @media screen and (max-width: $post-ad-1) {
   .post {
-    display: none;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: $post-ad-2) {
+  .post .info {
+    font-size: 10px;
   }
 }

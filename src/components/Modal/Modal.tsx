@@ -83,6 +83,14 @@ const Modal = () => {
               />
             </>
           )}
+
+          {stage === ModalStage.SportsChoice && <>Not yet done</>}
+
+          {stage === ModalStage.AthletesChoice && <>Not yet done</>}
+
+          {stage === ModalStage.OrganizationsChoice && <>Not yet done</>}
+
+          {stage === ModalStage.Profile && <>Not yet done</>}
         </div>
       </div>
     </div>
