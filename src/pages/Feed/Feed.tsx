@@ -1,11 +1,11 @@
 import MobilePost from "../../components/MobilePost/MobilePost";
 import Post from "../../components/Post/Post";
-import { PostProps } from "../../components/Post/PostProps.interface";
 import Side from "../../components/Side/Side";
+import { IPostProps } from "../../types/IPostProps";
 import s from "./Feed.module.scss";
 
 const Feed = () => {
-  const post: PostProps = {
+  const post: IPostProps = {
     subject: "Спортивная Борьба",
     uploadDate: "12 марта, 2024 в 16:03",
     title: "Илья Бессонов дал интервью для телеканала Россия-1",
@@ -21,6 +21,30 @@ const Feed = () => {
     ],
     viewsCount: "4.1 K",
     commentsCount: "4",
+    comments: [
+      {
+        name: "Вадим Давыдов",
+        avatar: "src/assets/avatars/1.png",
+        content: "Наконец-то! Рад, что он вернулся в спорт",
+        createdDate: "15 минут назад",
+        comments: [
+          {
+            name: "Артем Еременко",
+            avatar: "src/assets/avatars/2.png",
+            content: "Вадим, согласен! Уже давно ждал интервью!",
+            createdDate: "30 секунд назад",
+            comments: [],
+          },
+        ],
+      },
+      {
+        name: "Виталий Бобов",
+        avatar: "src/assets/avatars/3.png",
+        content: "Ура!",
+        createdDate: "1 час назад",
+        comments: [],
+      },
+    ],
   };
   return (
     <div className={s.feed}>
@@ -33,6 +57,7 @@ const Feed = () => {
           images={post.images}
           viewsCount={post.viewsCount}
           commentsCount={post.commentsCount}
+          comments={post.comments}
         />
         <MobilePost
           subject={post.subject}
@@ -42,6 +67,7 @@ const Feed = () => {
           images={post.images}
           viewsCount={post.viewsCount}
           commentsCount={post.commentsCount}
+          comments={post.comments}
         />
 
         <Post
@@ -52,6 +78,7 @@ const Feed = () => {
           images={post.images}
           viewsCount={post.viewsCount}
           commentsCount={post.commentsCount}
+          comments={post.comments}
         />
         <Post
           subject={post.subject}
@@ -61,6 +88,7 @@ const Feed = () => {
           images={post.images}
           viewsCount={post.viewsCount}
           commentsCount={post.commentsCount}
+          comments={post.comments}
         />
       </div>
       <Side />

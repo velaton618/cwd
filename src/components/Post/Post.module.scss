@@ -101,6 +101,10 @@
   background-color: $gray-scale-20;
 }
 
+.comments .container .subComments {
+  margin: 16px 32px;
+}
+
 @media screen and (max-width: $post-ad-1) {
   .post {
     display: none;

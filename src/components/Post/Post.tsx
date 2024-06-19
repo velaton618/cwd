@@ -2,9 +2,11 @@ import s from "./Post.module.scss";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import { FC } from "react";
-import { PostProps } from "./PostProps.interface";
+import { IPostProps } from "../../types/IPostProps";
+import IComment from "../../types/IComment";
+import Comment from "./Comment/Comment";
 
-const Post: FC<PostProps> = ({
+const Post: FC<IPostProps> = ({
   subject,
   uploadDate,
   title,
@@ -12,6 +14,7 @@ const Post: FC<PostProps> = ({
   images,
   viewsCount,
   commentsCount,
+  comments,
 }) => {
   return (
     <div className={s.post}>
@@ -45,7 +48,18 @@ const Post: FC<PostProps> = ({
         </div>
       </div>
       <div className={s.separator} />
-      <div className={s.comments}>Comments...</div>
+      <div className={s.comments}>
+        {comments?.map((comment: IComment) => (
+          <div className={s.container}>
+            <Comment comment={comment} />
+            <div className={s.subComments}>
+              {comment?.comments?.map((comment: IComment) => (
+                <Comment comment={comment} />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

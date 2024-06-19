@@ -1,4 +1,4 @@
-export interface PostProps {
+export interface IPostProps {
   subject: string;
   uploadDate: string;
   title: string;
@@ -6,4 +6,5 @@ export interface PostProps {
   images: string[];
   viewsCount: string;
   commentsCount: string;
+  comments: IComment[];
 }

@@ -1,10 +1,10 @@
 import { FC } from "react";
 import Header from "../Header/Header";
-import { LayoutProps } from "./LayoutProps.interface";
 import Modal from "../Modal/Modal";
 import MobileModal from "../Modal/MobileModal/MobileModal";
+import { ILayoutProps } from "../../types/ILayoutProps";
 
-const Layout: FC<LayoutProps> = ({ children }) => {
+const Layout: FC<ILayoutProps> = ({ children }) => {
   return (
     <>
       <Modal />

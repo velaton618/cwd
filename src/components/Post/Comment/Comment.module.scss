@@ -1,0 +1,55 @@
+@import "../../../variables.scss";
+
+.comment {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  gap: 12px;
+}
+
+.comment .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.comment .commentContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.comment .commentContent .name {
+  color: $gray-scale-50;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.comment .commentContent .text {
+  font-weight: 548;
+  font-size: 14px;
+  color: $gray-scale-70;
+}
+
+.comment .commentContent .info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.comment .commentContent .info .date {
+  color: $gray-scale-40;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.comment .commentContent .info .replyButton {
+  background: none;
+  border: none;
+  color: $gray-scale-70;
+
+  font-weight: 548;
+  font-size: 14px;
+
+  cursor: pointer;
+}

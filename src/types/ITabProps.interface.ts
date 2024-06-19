@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface TabProps {
+export interface ITabProps {
   title: string;
   icon: ReactNode;
   isActive: boolean;

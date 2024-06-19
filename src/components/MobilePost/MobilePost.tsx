@@ -2,9 +2,9 @@ import s from "./MobilePost.module.scss";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import { FC } from "react";
-import { PostProps } from "../Post/PostProps.interface";
+import { IPostProps } from "../../types/IPostProps";
 
-const MobilePost: FC<PostProps> = ({
+const MobilePost: FC<IPostProps> = ({
   subject,
   uploadDate,
   title,
@@ -39,8 +39,6 @@ const MobilePost: FC<PostProps> = ({
           {commentsCount}
         </div>
       </div>
-      <div className={s.separator} />
-      <div className={s.comments}>Comments...</div>
     </div>
   );
 };
