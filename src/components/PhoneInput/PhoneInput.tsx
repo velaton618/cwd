@@ -2,7 +2,6 @@ import s from "./PhoneInput.module.scss";
 import RuFlag from "../../assets/ru_flag.svg";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { setPhone } from "../../redux/slices/modalSlice";
-import { useState } from "react";
 
 const PhoneInput = () => {
   const dispatch = useAppDispatch();

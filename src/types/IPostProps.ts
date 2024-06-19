@@ -1,3 +1,5 @@
+import IComment from "./IComment";
+
 export interface IPostProps {
   subject: string;
   uploadDate: string;

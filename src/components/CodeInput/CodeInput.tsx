@@ -3,7 +3,7 @@ import AuthCode from "react-auth-code-input";
 import s from "./CodeInput.module.scss";
 
 const CodeInput = () => {
-  const [result, setResult] = useState("");
+  const [_, setResult] = useState("");
   const handleOnChange = (res: string) => {
     setResult(res);
   };
