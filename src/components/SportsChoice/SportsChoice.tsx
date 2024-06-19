@@ -32,6 +32,9 @@ const SportsChoice = () => {
         }}
       >
         <img src="sports/cycling.png" />
+        <div className={s.name}>
+          <div className={s.inner}>Велоспорт</div>
+        </div>
       </div>
       <div
         className={`${s.block} ${selected.handball && s.active}`}
@@ -43,6 +46,9 @@ const SportsChoice = () => {
         }}
       >
         <img src="sports/handball.png" />
+        <div className={s.name}>
+          <div className={s.inner}>Гандбол</div>
+        </div>
       </div>
       <div
         className={`${s.block} ${selected.skating && s.active}`}
@@ -54,6 +60,9 @@ const SportsChoice = () => {
         }}
       >
         <img src="sports/skating.png" />
+        <div className={s.name}>
+          <div className={s.inner}>Конькобежный спорт</div>
+        </div>
       </div>
       <div
         className={`${s.block} ${selected.sambo && s.active}`}
@@ -65,6 +74,9 @@ const SportsChoice = () => {
         }}
       >
         <img src="sports/sambo.png" />
+        <div className={s.name}>
+          <div className={s.inner}>Самбо</div>
+        </div>
       </div>
       <div
         className={`${s.block} ${selected.wrestling && s.active}`}
@@ -76,6 +88,9 @@ const SportsChoice = () => {
         }}
       >
         <img src="sports/wrestling.png" />
+        <div className={s.name}>
+          <div className={s.inner}>Спортивная борьба</div>
+        </div>
       </div>
       <div
         className={`${s.block} ${selected.weightlifting && s.active}`}
@@ -87,6 +102,9 @@ const SportsChoice = () => {
         }}
       >
         <img src="sports/weightlifting.png" />
+        <div className={s.name}>
+          <div className={s.inner}>Тяжелая атлетика</div>
+        </div>
       </div>
     </div>
   );

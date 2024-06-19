@@ -17,6 +17,7 @@
 }
 
 .block {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,6 +34,26 @@
 
 .block.active {
   opacity: 1;
+}
+
+.block .name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.block .name .inner {
+  background: $gray-scale-00;
+  color: $gray-scale-70;
+  padding: 7px 14px;
+  border-radius: 100px;
+  font-weight: 548;
+  font-size: 14px;
 }
 
 .block img {
