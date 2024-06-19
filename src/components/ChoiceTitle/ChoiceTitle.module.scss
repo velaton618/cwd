@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+.choiceTitle {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  padding: 0 0 24px 12px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: $gray-scale-70;
+}
+
+.steps {
+  font-size: 20px;
+  font-weight: 600;
+  color: $gray-scale-40;
+}

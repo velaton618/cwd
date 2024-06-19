@@ -15,6 +15,9 @@ import Rules from "../Rules/Rules";
 import CodeText from "../CodeText/CodeText";
 import CodeInput from "../CodeInput/CodeInput";
 import CodeButton from "../CodeButton/CodeButton";
+import ChoiceTitle from "../ChoiceTitle/ChoiceTitle";
+import SportsChoice from "../SportsChoice/SportsChoice";
+import ChoiceButtons from "../ChoiceButtons/ChoiceButtons";
 
 const Modal = () => {
   const isOpen = useAppSelector((state) => state.modal.isOpened);
@@ -31,17 +34,16 @@ const Modal = () => {
 
   return (
     <div
-      className={`${s.modal} ${isOpen ? s.active : ""}`}
+      className={`${s.modal} ${isOpen ? s.active : ""} ${stage === ModalStage.SportsChoice || stage === ModalStage.AthletesChoice || stage === ModalStage.OrganizationsChoice ? s.big : ""}`}
       id="modal"
       onClick={handleClick}
     >
       <div className={s.inner}>
         <CloseButton />
         <div className={s.content}>
-          <img src={Logo} />
-
           {stage === ModalStage.Login && (
             <>
+              <img src={Logo} />
               <LoginText />
               <PhoneInput />
               <SendButton nextStage={ModalStage.LoginCode} />
@@ -51,6 +53,7 @@ const Modal = () => {
 
           {stage === ModalStage.Register && (
             <>
+              <img src={Logo} />
               <RegisterText />
               <PhoneInput />
               <SendButton nextStage={ModalStage.RegisterCode} />
@@ -61,6 +64,7 @@ const Modal = () => {
 
           {stage === ModalStage.LoginCode && (
             <>
+              <img src={Logo} />
               <CodeText />
               <CodeInput />
               <CodeButton
@@ -74,6 +78,7 @@ const Modal = () => {
 
           {stage === ModalStage.RegisterCode && (
             <>
+              <img src={Logo} />
               <CodeText />
               <CodeInput />
               <CodeButton
@@ -84,7 +89,17 @@ const Modal = () => {
             </>
           )}
 
-          {stage === ModalStage.SportsChoice && <>Not yet done</>}
+          {stage === ModalStage.SportsChoice && (
+            <>
+              <ChoiceTitle
+                step={1}
+                stepsCount={4}
+                title="Выберите вид спорта"
+              />
+              <SportsChoice />
+              <ChoiceButtons step={1} stepsCount={4} />
+            </>
+          )}
 
           {stage === ModalStage.AthletesChoice && <>Not yet done</>}
 

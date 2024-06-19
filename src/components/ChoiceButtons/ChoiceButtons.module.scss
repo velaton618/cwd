@@ -1,0 +1,54 @@
+@import "../../variables.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.backBtn,
+.skipBtn,
+.nextBtn {
+  width: auto;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 24px;
+
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.backBtn,
+.skipBtn {
+  background-color: $gray-scale-20;
+  border: 2px solid $gray-scale-20;
+}
+
+.backBtn:hover,
+.skipBtn:hover {
+  background: none;
+}
+
+.nextBtn {
+  background-color: $gray-scale-70;
+  color: $gray-scale-00;
+  border: 2px solid $gray-scale-70;
+}
+
+.nextBtn:hover {
+  background: none;
+  color: $gray-scale-70;
+}

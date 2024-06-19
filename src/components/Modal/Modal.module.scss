@@ -29,6 +29,18 @@
   padding: 24px;
 }
 
+.modal.big .inner {
+  width: 60%;
+  height: 80%;
+  padding: 0;
+}
+
+.modal.big .content {
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+}
+
 .content {
   padding: 40px 00;
   display: flex;
