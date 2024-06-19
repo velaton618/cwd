@@ -11,6 +11,9 @@ import { ModalStage } from "../../../types/ModalStage";
 import RegisterText from "../../RegisterText/RegisterText";
 import Rules from "../../Rules/Rules";
 import Login from "../../Login/Login";
+import CodeText from "../../CodeText/CodeText";
+import CodeInput from "../../CodeInput/CodeInput";
+import CodeButton from "../../CodeButton/CodeButton";
 
 const MobileModal = () => {
   const isOpened = useAppSelector((state) => state.modal.isOpened);
@@ -49,6 +52,14 @@ const MobileModal = () => {
               <SendButton />
               <Rules />
               <Login />
+            </>
+          )}
+
+          {stage === ModalStage.Code && (
+            <>
+              <CodeText />
+              <CodeInput />
+              <CodeButton />
             </>
           )}
         </div>

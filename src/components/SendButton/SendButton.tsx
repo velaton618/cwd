@@ -1,5 +1,6 @@
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import { setError } from "../../redux/slices/modalSlice";
+import { setError, setStage } from "../../redux/slices/modalSlice";
+import { ModalStage } from "../../types/ModalStage";
 import s from "./SendButton.module.scss";
 
 const SendButton = () => {
@@ -19,6 +20,7 @@ const SendButton = () => {
       dispatch(setError(ERRORS.invalid));
     } else {
       dispatch(setError(""));
+      dispatch(setStage(ModalStage.Code));
     }
   }
 

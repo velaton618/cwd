@@ -32,6 +32,12 @@ importers:
       react:
         specifier: ^18.2.0
         version: 18.3.1
+      react-auth-code-input:
+        specifier: ^3.2.1
+        version: 3.2.1(react@18.3.1)
+      react-code-input:
+        specifier: ^3.10.1
+        version: 3.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-country-flag:
         specifier: ^3.1.0
         version: 3.1.0(react@18.3.1)
@@ -847,6 +853,9 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
+
   clsx@2.1.1:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
@@ -1279,6 +1288,18 @@ packages:
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+
+  react-auth-code-input@3.2.1:
+    resolution: {integrity: sha512-oWWKbxDLU5g46gvE1DIvNFHsDx37JSAfB6WX8luG6TWZB3iDfKMjQnhUgb+0imL/6ykGVMqdZ426tQW1uj25kg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16.0.0'
+
+  react-code-input@3.10.1:
+    resolution: {integrity: sha512-B1RqSc32BzFP9eoV5LWhRTmbJ8I3rKs+6E01yaJwDqcVBE4kKgRJHBmPcXRD58qkCPssnF/Aq5UDNzIiTw7eNg==}
+    peerDependencies:
+      react: ^15.5.4 ||^16.2.0 || ^17.0.0
+      react-dom: ^15.5.4 ||^16.2.0 || ^17.0.0
 
   react-country-flag@3.1.0:
     resolution: {integrity: sha512-JWQFw1efdv9sTC+TGQvTKXQg1NKbDU2mBiAiRWcKM9F1sK+/zjhP2yGmm8YDddWyZdXVkR8Md47rPMJmo4YO5g==}
@@ -2309,6 +2330,8 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  classnames@2.5.1: {}
+
   clsx@2.1.1: {}
 
   color-convert@1.9.3:
@@ -2749,6 +2772,16 @@ snapshots:
   punycode@2.3.1: {}
 
   queue-microtask@1.2.3: {}
+
+  react-auth-code-input@3.2.1(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+
+  react-code-input@3.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      classnames: 2.5.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-country-flag@3.1.0(react@18.3.1):
     dependencies:

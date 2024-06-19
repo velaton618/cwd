@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+.codeButton {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  margin-top: 24px;
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  background-color: $gray-scale-70;
+  color: $gray-scale-00;
+  border: 2px solid $gray-scale-70;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+  background: none;
+  color: $gray-scale-70;
+}
+
+.resendText {
+  color: $gray-scale-40;
+  font-size: 14px;
+  font-weight: 548;
+}
