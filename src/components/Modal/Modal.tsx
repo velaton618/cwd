@@ -18,6 +18,7 @@ import CodeButton from "../CodeButton/CodeButton";
 import ChoiceTitle from "../ChoiceTitle/ChoiceTitle";
 import SportsChoice from "../SportsChoice/SportsChoice";
 import ChoiceButtons from "../ChoiceButtons/ChoiceButtons";
+import AthletesChoice from "../AthletesChoice/AthletesChoice";
 
 const Modal = () => {
   const isOpen = useAppSelector((state) => state.modal.isOpened);
@@ -101,7 +102,18 @@ const Modal = () => {
             </>
           )}
 
-          {stage === ModalStage.AthletesChoice && <>Not yet done</>}
+          {stage === ModalStage.AthletesChoice && (
+            <>
+              <ChoiceTitle
+                step={2}
+                stepsCount={4}
+                title="Выберите спортсмена"
+                description="Выберите одного или нескольких спортсменов из списка предложенных."
+              />
+              <AthletesChoice />
+              <ChoiceButtons step={2} stepsCount={4} />
+            </>
+          )}
 
           {stage === ModalStage.OrganizationsChoice && <>Not yet done</>}
 

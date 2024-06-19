@@ -3,14 +3,25 @@
 .choiceTitle {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.top {
+  display: flex;
   gap: 12px;
-  padding: 0 0 24px 12px;
 }
 
 .title {
   font-size: 20px;
   font-weight: 600;
   color: $gray-scale-70;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 500;
+  color: $gray-scale-40;
 }
 
 .steps {
