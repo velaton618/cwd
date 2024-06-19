@@ -12,25 +12,25 @@ const Feed = () => {
     description:
       "Илья Бессонов дал интервью после большого перерыва, где поделился секретом своего успеха и рассказал методики своих тренировок. Спортсмен сделал заявление, что возвращается в спорт и ...",
     images: [
-      "src/assets/post/1.png",
-      "src/assets/post/2.png",
-      "src/assets/post/3.png",
-      "src/assets/post/4.png",
-      "src/assets/post/5.png",
-      "src/assets/post/6.png",
+      "post/1.png",
+      "post/2.png",
+      "post/3.png",
+      "post/4.png",
+      "post/5.png",
+      "post/6.png",
     ],
     viewsCount: "4.1 K",
     commentsCount: "4",
     comments: [
       {
         name: "Вадим Давыдов",
-        avatar: "src/assets/avatars/1.png",
+        avatar: "avatars/1.png",
         content: "Наконец-то! Рад, что он вернулся в спорт",
         createdDate: "15 минут назад",
         comments: [
           {
             name: "Артем Еременко",
-            avatar: "src/assets/avatars/2.png",
+            avatar: "avatars/2.png",
             content: "Вадим, согласен! Уже давно ждал интервью!",
             createdDate: "30 секунд назад",
             comments: [],
@@ -39,7 +39,7 @@ const Feed = () => {
       },
       {
         name: "Виталий Бобов",
-        avatar: "src/assets/avatars/3.png",
+        avatar: "avatars/3.png",
         content: "Ура!",
         createdDate: "1 час назад",
         comments: [],

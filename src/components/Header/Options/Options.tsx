@@ -2,7 +2,7 @@ import { MenuItem } from "@mui/material";
 import s from "./Options.module.scss";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { useState } from "react";
-import RuFlag from "../../../assets/ru_flag.svg";
+import RuFlag from "../../../../ru_flag.svg";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { useAppDispatch } from "../../../redux/hooks";
 import { openModal } from "../../../redux/slices/modalSlice";

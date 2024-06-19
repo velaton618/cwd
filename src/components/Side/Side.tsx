@@ -9,7 +9,7 @@ const Side = () => {
         <Tabs />
       </div>
       <div className={s.ads}>
-        <img src={"src/assets/ads.png"} />
+        <img src={"/ads.png"} />
       </div>
     </div>
   );
