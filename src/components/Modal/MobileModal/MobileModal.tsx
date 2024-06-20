@@ -20,6 +20,7 @@ import ChoiceButtons from "../../ChoiceButtons/ChoiceButtons";
 import AthletesChoice from "../../AthletesChoice/AthletesChoice";
 import OrganizationsChoice from "../../OrganizationsChoice/OrganizationsChoice";
 import ProfileStage from "../../ProfileStage/ProfileStage";
+import CloseButton from "../../CloseButton/CloseButton";
 
 const MobileModal = () => {
   const isOpened = useAppSelector((state) => state.modal.isOpened);
@@ -43,7 +44,7 @@ const MobileModal = () => {
         className={`${s.modal} ${isOpened ? s.active : ""}`}
       >
         <div className={s.inner}>
-
+          <CloseButton />
           {stage === ModalStage.Login && (
             <>
               <img src={Logo} className={s.logo} />
