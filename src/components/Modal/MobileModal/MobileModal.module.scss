@@ -22,7 +22,7 @@
   background: #000000aa;
   opacity: 0;
   visibility: hidden;
-  transition: 0.2s all ease;
+  transition: 0.05s all ease;
   backdrop-filter: blur(4px);
 }
 
@@ -34,7 +34,7 @@
 .modal {
   z-index: 1002;
   position: fixed;
-  transition: 0.2s all ease;
+  transition: 0.05s all ease;
   transform: translateY(100vh);
   left: 0;
   width: 100vw;
@@ -50,7 +50,6 @@
 .modal .inner {
   position: absolute;
 
-  // bottom: 0;
   left: 0;
 
   width: 100%;
@@ -66,7 +65,7 @@
 
   overflow: hidden;
 
-  transition: all 0.2s ease-in-out;
+  transition: all 0.05s ease-in-out;
 }
 
 .modal .inner .logo {
@@ -88,5 +87,9 @@
 
   .modal.active .inner {
     bottom: 0;
+  }
+
+  .modal.active body {
+    overflow: hidden;
   }
 }

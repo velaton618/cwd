@@ -1,13 +1,42 @@
 @import "src/styles/vars";
 
-.menuBtn {
+.container {
   display: none;
   justify-content: flex-end;
   border: none;
   background: none;
 }
 
+.menuBtn {
+  border: none;
+  background: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 100dvw;
+  background: $gray-scale-00;
+  width: 100dvw;
+  height: 100dvh;
+
+  padding: 16px;
+
+  transition: all 0.05s ease-in-out;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.menu .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: $ad-3) {
+  .container,
   .menuBtn {
     display: flex;
   }

@@ -6,7 +6,7 @@ const initialState: IModalState = {
   isOpened: false,
   phone: "+7",
   error: "",
-  stage: ModalStage.Login,
+  stage: ModalStage.Done,
 };
 
 export const modalSlice = createSlice({

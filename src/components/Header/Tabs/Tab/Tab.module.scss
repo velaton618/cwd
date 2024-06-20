@@ -49,3 +49,16 @@
     height: 15px;
   }
 }
+
+@media screen and (max-width: $ad-3) {
+  .tab {
+    font-size: 14px;
+    justify-content: start;
+    padding: 16px;
+  }
+
+  .tab .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
