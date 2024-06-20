@@ -55,3 +55,32 @@
   background: none;
   color: $gray-scale-70;
 }
+
+@media screen and (max-width: $ad-3) {
+
+  .container {
+    margin-top: 18px;
+    border-bottom: none;
+    width: 100%;
+    display: grid;
+    justify-content: stretch;
+  }
+
+  .right {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .backBtn,
+  .skipBtn,
+  .nextBtn {
+    width: 100%;
+  }
+
+  .backBtn {
+    margin-bottom: 18px;
+  }
+  
+}

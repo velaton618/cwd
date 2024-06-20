@@ -57,3 +57,26 @@
   line-height: 1.2;
   max-height: calc(1.2em * 2);
 }
+
+@media screen and (max-width: $ad-3) {
+
+  .container {
+    padding-top: 1rem;
+    margin-bottom: 0rem;
+    height: 40vh;
+    overflow-y: auto;
+    grid-template-columns: auto auto;
+    border-top: none;
+    border-bottom: 0;
+  }
+
+  .list {
+    margin-top: 24px;
+  
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    gap: 20px 54px;
+  }
+}

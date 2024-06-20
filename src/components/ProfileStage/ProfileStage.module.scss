@@ -62,3 +62,22 @@
 .fields .inputContainer input::placeholder {
   color: $gray-scale-40;
 }
+
+@media screen and (max-width: $ad-3) {
+
+  .container {
+    margin-bottom: 0rem;
+    height: 40vh;
+    overflow-y: auto;
+    grid-template-columns: auto auto;
+    border-top: none;
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  .fields {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+}

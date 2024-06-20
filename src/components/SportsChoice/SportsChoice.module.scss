@@ -60,3 +60,21 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: $ad-3) {
+
+
+  .container {
+    height: 40vh;
+    overflow-y: auto;
+    grid-template-columns: auto auto;
+    border-top: none;
+    border-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .block {
+    height: 30vh
+  }
+}
