@@ -4,12 +4,14 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { useState } from "react";
 import RuFlag from "../../../assets/ru_flag.svg";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import { useAppDispatch } from "../../../redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
 import { openModal } from "../../../redux/slices/modalSlice";
+import { ModalStage } from "../../../types/ModalStage";
 
 const Options = () => {
   const [language, setLanguage] = useState("ru");
   const dispatch = useAppDispatch();
+  const stage = useAppSelector((state) => state.modal.stage);
 
   const handleChange = (event: SelectChangeEvent) => {
     setLanguage(event.target.value);
@@ -36,8 +38,15 @@ const Options = () => {
         </MenuItem>
       </Select>
 
-      <button className={s.profile} onClick={() => dispatch(openModal())}>
-        <PersonOutlineOutlinedIcon />
+      <button
+        className={`${s.profile} ${stage === ModalStage.Done && s.image}`}
+        onClick={() => dispatch(openModal())}
+      >
+        {stage === ModalStage.Done ? (
+          <img src="/default_user.png" />
+        ) : (
+          <PersonOutlineOutlinedIcon />
+        )}
       </button>
     </div>
   );
