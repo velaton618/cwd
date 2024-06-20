@@ -1,0 +1,9 @@
+@import "src/styles/vars";
+
+@mixin page-container() {
+  margin: 26px $padding-x;
+}
+
+@mixin mobile-page-container() {
+  margin: 16px;
+}

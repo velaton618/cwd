@@ -1,0 +1,12 @@
+@use "src/styles/mixins";
+@import "src/styles/vars";
+
+.container {
+  @include mixins.page-container;
+}
+
+@media screen and (max-width: $ad-3) {
+  .container {
+    @include mixins.mobile-page-container;
+  }
+}

@@ -1,4 +1,4 @@
-@import "../../../variables.scss";
+@import "src/styles/vars";
 
 .modalBtn {
   width: 100%;
@@ -50,7 +50,7 @@
 .modal .inner {
   position: absolute;
 
-  bottom: 0;
+  // bottom: 0;
   left: 0;
 
   width: 100%;

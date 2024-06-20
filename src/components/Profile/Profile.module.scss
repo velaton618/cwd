@@ -1,0 +1,181 @@
+@import "src/styles/vars";
+
+.container {
+  padding: 24px 20px;
+  border-radius: 20px;
+  background-color: $gray-scale-00;
+}
+.top {
+  display: flex;
+  gap: 16px;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 548;
+  color: $gray-scale-40;
+}
+
+.verification {
+  margin-top: 28px;
+  width: fit-content;
+
+  padding: 8px 12px 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+
+  background-color: $gray-scale-60;
+  color: $gray-scale-00;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+.info .block {
+  background-color: $gray-scale-20;
+
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 548;
+  line-height: 20px;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 548;
+  line-height: 20px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 548;
+  line-height: 20px;
+
+  color: $gray-scale-40;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.editButton {
+  height: 40px;
+  padding: 0px 24px;
+  background-color: $gray-scale-70;
+  color: $gray-scale-00;
+
+  font-size: 14px;
+  font-weight: 548;
+  line-height: 20px;
+
+  border: 2px solid $gray-scale-70;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.editButton:hover {
+  background: none;
+  color: $gray-scale-70;
+}
+
+.shareButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  border: 2px solid $gray-scale-20;
+  background-color: $gray-scale-20;
+  color: $gray-scale-70;
+
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.shareButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.shareButton:hover {
+  background: none;
+}
+
+@media screen and (max-width: $ad-3) {
+  .container .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .right {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .verification {
+    font-size: 12px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
